@@ -1005,6 +1005,9 @@ display: none;
 .ourgallery .w-100 {
     min-height: 115px;
 }
+.about-area .images-column .inner-column .about-image2 {
+    left: 0;
+}
 }
 @media screen and (max-width: 767px){
 .about-area .sec-title h2,
@@ -1030,9 +1033,7 @@ padding: 14px;
 .logo img {
     width: 149px;
 }
-.about-area .images-column .inner-column .about-image2 {
-    left: 0;
-}
+
 .about-area .images-column .inner-column img {
     width: 50%;
 }

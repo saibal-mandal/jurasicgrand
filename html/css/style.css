@@ -895,7 +895,7 @@ left: -100%;
 opacity: 0;
 transition: all .3s ease-in-out;
 top: 0px;
-height: 70vh;
+height: 100vh;
 padding-top: 30px;
 z-index: 9;
 }
@@ -991,9 +991,6 @@ display: none;
 .heading h2 {
     font-size: 30px;
     margin-bottom: 25px;
-}
-.navbar-nav {
-    height: 100vh;
 }
 .about-area .images-column .inner-column img {
     width: 45%;

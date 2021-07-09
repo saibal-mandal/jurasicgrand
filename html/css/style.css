@@ -233,6 +233,7 @@ width: 200px;
 .main-header ul.navbar-nav.ml-auto {
 display: flex;
 align-items: center;
+justify-content: center;
 }
 .main-header li.nav-item.active .nav-link {
 background: var(--second-color);

@@ -1044,6 +1044,13 @@ footer ul.footer-navigation li {
 }
 }
 @media screen and (max-width: 575px){
+.main-header ul.navbar-nav.ml-auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+}    
 .dropdown-menu {
 width: 50%;
 }

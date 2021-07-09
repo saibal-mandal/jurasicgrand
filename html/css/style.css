@@ -1095,7 +1095,7 @@ width: 80%;
     min-height: 180px;
 }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 380px){
 .top-header .search {
     display: none;
 }
@@ -1113,6 +1113,9 @@ width: 80%;
 }
 .gallery-box .card-img-top {
     min-height: 150px;
+}
+.calling-box .right-box ul li h2 {
+    font-size: 20px;
 }
 }
 @media screen and (max-width: 300px){

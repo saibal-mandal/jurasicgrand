@@ -534,6 +534,8 @@ padding: 0;
 }
 .best-restaurant {
     padding: 70px 30px;
+    position: relative;
+    z-index: 999;
 }
 .request-dining .restaurant-title {
     text-align: left;

@@ -15,11 +15,12 @@
       <link href="css/owl.theme.default.min.css" rel="stylesheet">
       <link href="css/hover.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+      <link href="css/aos-animation.css" rel="stylesheet">
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
       <div class="loader"></div>
-      <header>
+      <header id="myHeader">
          <div class="top-header">
           <div class="container">
             <div class="row justify-content-lg-end justify-content-center align-items-center">
@@ -39,11 +40,11 @@
                         <a href="tel:918814010402"><i class="fas fa-phone-volume"></i> +91 88140 10402 </a>
                      </div>
                   </li>
-                  <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="http://www.facebook.com" target="_blank" class="heartBeat"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="http://www.twitter.com" target="_blank" class="heartBeat"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="http://www.instagram.com" target="_blank" class="heartBeat"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="http://www.linkedin.com" target="_blank" class="heartBeat"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="http://www.youtube.com" target="_blank" class="heartBeat"><i class="fab fa-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -134,7 +135,7 @@
           </div>
           <div class="row reorder-xs clearfix">
               <div class="images-column col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                  <div class="inner-column">
+                  <div class="inner-column colorChange">
                       <div class="about-image2">
                           <img src="images/about-02.png" alt="about-image">
                       </div>
@@ -167,7 +168,7 @@
                </div>
             </div>
             <div class="row justify-content-lg-between justify-content-center">
-               <div class="col-lg-3 col-sm-6 col-6">
+               <div class="col-lg-3 col-sm-6 col-6 aos-init aos-animate" data-aos="flip-right" data-aos-duration="3000">
                   <div class="card gallery-box text-center">
                      <div class="card-body">
                         <a href="javascript:void(0);">
@@ -186,7 +187,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6 col-6">
+               <div class="col-lg-3 col-sm-6 col-6 aos-init aos-animate" data-aos="flip-left" data-aos-duration="3000">
                   <div class="card gallery-box text-center">
                      <div class="card-body">
                         <a href="javascript:void(0);">
@@ -205,7 +206,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6 col-6">
+               <div class="col-lg-3 col-sm-6 col-6 aos-init aos-animate" data-aos="flip-left" data-aos-duration="3000">
                   <div class="card gallery-box text-center">
                      <div class="card-body">
                         <a href="javascript:void(0);">
@@ -224,7 +225,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6 col-6">
+               <div class="col-lg-3 col-sm-6 col-6 aos-init aos-animate" data-aos="flip-right" data-aos-duration="3000">
                   <div class="card gallery-box text-center">
                      <div class="card-body">
                         <a href="javascript:void(0);">
@@ -280,12 +281,12 @@
             <div class="row justify-content-center">
                <div class="col-lg-6 col-md-9 col-sm-12">
                   <div class="heading text-center">
-                     <a href="javascript:void(0);"><h2>Professional <span> Services </span></h2>
+                     <h2>Professional <span> Services </span></h2>
                   </div>
                </div>
             </div>
             <div class="row justify-content-lg-between justify-content-center">
-               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+               <div class="col-lg-2 col-md-3 col-sm-4 col-6 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="3000">
                  <div class="card single-box text-center">
                    <div class="card-body">
                      <div class="icon-box">
@@ -295,7 +296,7 @@
                    </div>
                  </div>
                </div>
-               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+               <div class="col-lg-2 col-md-3 col-sm-4 col-6 aos-init aos-animate"  data-aos="zoom-in-down" data-aos-duration="3000">
                  <div class="card single-box text-center">
                    <div class="card-body">
                      <div class="icon-box">
@@ -305,7 +306,7 @@
                    </div>
                  </div>
                </div>
-               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+               <div class="col-lg-2 col-md-3 col-sm-4 col-6 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="3000">
                  <div class="card single-box text-center">
                    <div class="card-body">
                      <div class="icon-box">
@@ -315,7 +316,7 @@
                    </div>
                  </div>
                </div>
-               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+               <div class="col-lg-2 col-md-3 col-sm-4 col-6 aos-init aos-animate"  data-aos="zoom-in-down" data-aos-duration="3000">
                  <div class="card single-box text-center">
                    <div class="card-body">
                      <div class="icon-box">
@@ -325,7 +326,7 @@
                    </div>
                  </div>
                </div>
-               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+               <div class="col-lg-2 col-md-3 col-sm-4 col-6 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="3000">
                  <div class="card single-box text-center">
                    <div class="card-body">
                      <div class="icon-box">
@@ -335,7 +336,7 @@
                    </div>
                  </div>
                </div>
-               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+               <div class="col-lg-2 col-md-3 col-sm-4 col-6 aos-init aos-animate"  data-aos="zoom-in-down" data-aos-duration="3000">
                  <div class="card single-box text-center">
                    <div class="card-body">
                      <div class="icon-box">
@@ -354,7 +355,7 @@
                <div class="free-call">
                   <div class="row justify-content-end align-items-center">
                      <div class="col-lg-6 col-md-8 col-sm-12 px-0" style="">
-                        <div class="calling-box">
+                        <div class="calling-box aos-init aos-animate" data-aos="zoom-in" data-aos-duration="3000">
                           <div class="left-box">
                             <img src="images/call-icon.png" class="img-fluid" alt="call icon">
                           </div>
@@ -383,7 +384,7 @@
                </div>
             </div>
             <div class="row justify-content-lg-between justify-content-center">
-                  <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="col-lg-4 col-sm-6 col-12 aos-init" data-aos="flip-left" data-aos-duration="3000">
                     <div class="abs-div">
                       <h4>08, December 2020</h4>
                     </div>
@@ -404,7 +405,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="col-lg-4 col-sm-6 col-12 aos-init" data-aos="flip-right" data-aos-duration="3000">
                     <div class="abs-div">
                       <h4>08, December 2020</h4>
                     </div>
@@ -425,7 +426,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="col-lg-4 col-sm-6 col-12 aos-init" data-aos="flip-left" data-aos-duration="3000">
                     <div class="abs-div">
                       <h4>08, December 2020</h4>
                     </div>
@@ -491,11 +492,11 @@
         </div>
         <div class="social">
           <ul class="socialicon">
-            <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fb"></i></a></li>
-            <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="http://www.facebook.com" target="_blank" class="heartBeat"><i class="fab fa-facebook-f fb"></i></a></li>
+            <li><a href="http://www.twitter.com" target="_blank" class="heartBeat"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="http://www.instagram.com" target="_blank" class="heartBeat"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://www.linkedin.com" target="_blank" class="heartBeat"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="http://www.youtube.com" target="_blank" class="heartBeat"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
       </div>
@@ -519,6 +520,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
    </body>
 </html>

@@ -26,6 +26,21 @@ $('.scrollup').click(function(){
 	return false;
 	});	
 // ----------------------------------------------
+
+// sticky header
+
+window.onscroll = function () {
+    myFunction();
+  };
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+  }
 // header-section...
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar-nav');
@@ -108,4 +123,7 @@ $('#banner-slider').owlCarousel({
                     this.title = 'Jurasicgard ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
                 }
             });
+
+// Top To Start End //
+AOS.init(); 
 

@@ -224,7 +224,6 @@ transition: all ease-in-out 600ms;
 }
 
 .main-header {
-background: #fff;
 margin: 6px 0;
 }
 .logo img{
@@ -284,6 +283,86 @@ transition: .3s;
 color: #16181b;
 text-decoration: none;
 background-color: transparent;
+}
+
+.sticky{
+    background-color: var(--second-color);
+    color: #fff;
+    border-radius: .3125rem;
+    box-shadow: 0 .875rem 1.75rem rgba(0, 0, 0, 0.25), 0 .625rem .625rem rgba(0, 0, 0, 0.22);
+    transition: all .3s;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1.1875rem 2.375rem rgba(0, 0, 0, 0.30), 0 .9375rem .75rem rgba(0, 0, 0, 0.22);
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+.sticky .main-header .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/*Color Changing */
+.colorChange img {
+    -webkit-animation: filter-animation .9s infinite;
+    animation: filter-animation .9s infinite;
+    animation-timing-function: ease-in-out;
+    transition-timing-function: linear;
+}
+@keyframes filter-animation {
+    0% {
+        -webkit-filter: sepia(0) saturate(1);
+        -webkit-filter: blur(20px);
+        filter: blur(20px);
+        filter: sepia(0) saturate(1);
+        transition: all 0.9s;
+        transition-timing-function: linear;
+    }
+    50% {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        transition: all 0.9s;
+        transition-timing-function: linear;
+    }
+    100% {
+        -webkit-filter: sepia(0) saturate(1);
+        filter: sepia(0) saturate(1);
+        transition: all 0.9s;
+        transition-timing-function: linear;
+    }
+}
+.heartBeat {
+    animation: beat .5s infinite alternate;
+    transform-origin: center;
+}
+@keyframes beat {
+    to {
+        transform: scale(1.2);
+    }
 }
 /*==============banner-section============*/
 .banner {
@@ -492,6 +571,7 @@ padding: 0;
     background-repeat: no-repeat;
     position: relative;
     padding: 0px;
+    z-index: 1;
 }
 .shinIng {
     position: relative;
@@ -969,11 +1049,11 @@ z-index: 222;
 cursor: pointer;
 }
 .darkHeader #mobile-menu {
-position: absolute;
-top: 27px;
-right: 5%;
-z-index: 222;
-cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    cursor: pointer;
+    z-index: 1;
 }
 .menu-toggle .bar{
 display: block;
@@ -1068,7 +1148,7 @@ padding: 14px;
 }
 
 .navbar-nav {
-    height: 130vh;
+    height: 100vh;
 }
 footer ul.footer-navigation li {
     margin: 0 10px;
@@ -1128,8 +1208,15 @@ width: 80%;
 .gallery-box .card-img-top {
     min-height: 180px;
 }
+footer ul.footer-navigation li {
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-bottom: 1px solid #344050;
+    padding: 5px 0;
 }
-@media screen and (max-width: 380px){
+}
+@media screen and (max-width: 412px){
 .top-header .search {
     display: none;
 }
@@ -1151,6 +1238,12 @@ width: 80%;
 .calling-box .right-box ul li h2 {
     font-size: 18px;
 }
+.calling-box .right-box ul li h2 {
+    color: var(--fourth-color);
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
 }
 @media screen and (max-width: 300px){
 .our-blog .abs-div {
@@ -1159,4 +1252,32 @@ width: 80%;
 .our-blog .blog-box {
     padding: 0;
 }
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--themeColor);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
